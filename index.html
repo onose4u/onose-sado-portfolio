@@ -3,100 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onose Sado - Web Developer</title>
+    <title>Onose Sado | Web Developer & Digital Operations Specialist</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #87CEEB, #ffffff);
-            text-align: center;
-            padding: 50px;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(to right, #eaf3ff, #ffffff);
+            margin: 0;
+            padding: 40px 15px;
             color: #333;
         }
+
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             background: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
         }
-        .container:hover {
-            transform: scale(1.02);
-        }
+
         h1 {
-            color: #004080;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            color: #003366;
+            font-size: 2.6em;
+            margin-bottom: 5px;
         }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-        .btn {
+
+        h2 {
+            color: #003366;
+            font-size: 1.9em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #003366;
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #004080;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.1em;
-            transition: background 0.3s ease;
-        }
-        .btn:hover {
-            background: #00264d;
-        }
-        .section {
-            margin-top: 40px;
-            text-align: left;
-            padding: 20px;
-            border-radius: 10px;
-            background: #f4f8ff;
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-        }
-        .section h2 {
-            color: #004080;
-            font-size: 1.8em;
-            border-bottom: 3px solid #004080;
             padding-bottom: 5px;
         }
-        .contact p {
+
+        p {
             font-size: 1.1em;
-            font-weight: bold;
+            line-height: 1.7;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 28px;
+            background: #003366;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.05em;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #001f4d;
+        }
+
+        .section {
+            margin-top: 45px;
+            background: #f6f9ff;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        /* PROJECT GRID */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #ddd;
+        }
+
+        .project-card-content {
+            padding: 20px;
+        }
+
+        .project-card-content h3 {
+            color: #003366;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .project-card-content a {
+            color: #004c99;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .project-card-content a:hover {
+            text-decoration: underline;
+        }
+
+        .contact p {
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.95em;
+            color: #777;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Onose Sado</h1>
-        <p>Web Developer | PHP, JavaScript, MySQL, HTML, CSS, Bootstrap</p>
-        <p>I specialize in building and managing company websites.</p>
-        <a href="resume.pdf" class="btn" download>Download Resume</a>
+<div class="container">
 
-        <div class="section">
-            <h2>Services</h2>
-            <p><strong>Website Development:</strong> Custom websites tailored to your business needs.</p>
-            <p><strong>Website Management:</strong> Ongoing maintenance and updates to keep your site running smoothly.</p>
-            <p><strong>E-commerce Solutions:</strong> Secure online stores with payment gateway integration.</p>
-            <p><strong>SEO Optimization:</strong> Improve your website's visibility and search rankings.</p>
-            <p><strong>Web Security:</strong> Protection against threats and vulnerabilities.</p>
-        </div>
+    <!-- HERO -->
+    <h1>Onose Sado</h1>
+    <p class="tagline">
+        Web Developer | Digital Operations & Portal Management Specialist
+    </p>
 
-        <div class="section">
-            <h2>Projects</h2>
-            <p>1. Company Website Development - Built and manage a fully responsive website for the Association of Ogoni Doctors.</p>
-            <p>2. University Portal - Created and maintain a Post Graduate student Application system with payment integration for IPES Uniport.</p>
-            <p>3. Company Website Development - Built and managed a fully responsive website for the Jinkaku Security Limited.</p>
-            <p>4. Company Website Development - Built and manage a fully responsive website for Figoniso Nigeria Ltd.</p>
-            <p>5. Company Website Development - Built and manage a fully responsive website for ANNSA WORLDWIDE SOLUTION LIMITED.</p>
-        </div>
+    <p>
+        I design, develop, and manage secure, scalable websites and web portals for organizations,
+        institutions, and businesses. My work focuses on reliability, usability, payment systems,
+        and long-term maintenance.
+    </p>
 
-        <div class="section contact">
-            <h2>Contact</h2>
-            <p>Email: onose.sado@sims.ng</p>
-            <p>LinkedIn: linkedin.com/in/onose-aig-sado
+    <a href="resume.pdf" class="btn" download>Download CV</a>
+
+    <!-- SERVICES -->
+    <div class="section">
+        <h2>What I Do</h2>
+        <ul>
+            <li>Custom website development for businesses and organizations</li>
+            <li>Web portals, admin dashboards, and application systems</li>
+            <li>Secure payment gateway integration</li>
+            <li>Website management, updates, and technical support</li>
+            <li>Database and content management</li>
+            <li>Security, performance, and reliability optimization</li>
+        </ul>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+        <h2>Live Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="images/xenoxis.jpg" alt="Xenoxis Global Resources">
+                <div class="project-card-content">
+                    <h3>Xenoxis Global Resources</h3>
+                    <p>Corporate website developed for a Nigerian business brand.</p>
+                    <a href="https://xenoxisglobalresources.com.ng" target="_blank">
+                        Visit Website →
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/royalonehouse.jpg" alt="The Royal One House Social Club">
+                <div class="project-card-content">
+                    <h3>The Royal One House Social Club</h3>
+                    <p>Organizational website supporting visibility and engagement.</p>
+                    <a href="https://theroyalonehousesocialclub.org.ng" target="_blank">
+                        Visit Website →
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/ogoni.jpg" alt="Association of Ogoni Doctors">
+                <div class="project-card-content">
+                    <h3>Association of Ogoni Doctors</h3>
+                    <p>Responsive corporate website with ongoing management.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/ipes.jpg" alt="IPES Uniport Portal">
+                <div class="project-card-content">
+                    <h3>IPES Uniport – PG Application Portal</h3>
+                    <p>Full postgraduate application system with payment integration.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/jinkaku.jpg" alt="Jinkaku Security Limited">
+                <div class="project-card-content">
+                    <h3>Jinkaku Security Limited</h3>
+                    <p>Corporate website with backend content management.</p>
+                </div>
+            </div>
+
         </div>
     </div>
+
+    <!-- CONTACT -->
+    <div class="section contact">
+        <h2>Contact</h2>
+        <p>Email: onose.sado@sims.ng</p>
+        <p>LinkedIn: linkedin.com/in/onose-aig-sado</p>
+    </div>
+
+    <footer>
+        © 2026 Onose Sado. All rights reserved.
+    </footer>
+
+</div>
 </body>
 </html>
